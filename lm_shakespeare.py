@@ -1,3 +1,15 @@
+"""
+Language Modeling with Transformers
+
+Goal:
+- Understand the workflow behind training causal language models
+
+What this explores:
+- Tokenization and batching for autoregressive models
+- Fine-tuning GPT-2 on a small text corpus
+- Generating text from a trained language model
+"""
+
 !pip install transformers
 !pip install datasets
 from datasets import load_dataset
