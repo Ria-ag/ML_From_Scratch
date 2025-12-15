@@ -1,3 +1,15 @@
+"""
+Fully Connected Neural Network on MNIST
+
+Goal:
+- Move beyond linear models to learned representations
+
+What this explores:
+- Multilayer perceptrons with ReLU activations
+- Training with backpropagation using PyTorch
+- How depth improves classification performance on MNIST
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import sklearn
