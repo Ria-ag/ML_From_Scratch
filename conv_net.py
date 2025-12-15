@@ -1,3 +1,15 @@
+"""
+Convolutional Neural Networks on CIFAR-10
+
+Goal:
+- Compare fully connected networks with convolutional architectures
+
+What this explores:
+- Image normalization and visualization
+- Dense networks vs CNNs for image classification
+- How spatial structure improves learning on visual data
+"""
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt
