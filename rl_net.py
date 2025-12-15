@@ -1,3 +1,15 @@
+"""
+Deep Reinforcement Learning with DQN (CartPole)
+
+Goal:
+- Learn control policies through interaction with an environment
+
+What this explores:
+- Deep Q-Networks with experience replay
+- Epsilon-greedy exploration and target networks
+- Training an agent to balance CartPole via reward maximization
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
