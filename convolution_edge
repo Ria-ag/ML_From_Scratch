@@ -1,0 +1,39 @@
+import imageio.v2 as iio
+import matplotlib.pyplot as plt
+import numpy as np
+from tqdm import tqdm
+
+def open_image(file_path):
+    return iio.imread(file_path)
+
+def convolve(img, kernel):
+    h, w, d = img.shape
+    kh, kw = kernel.shape
+  
+    res = np.zeros((h-kh+1, w-kw+1, d))
+    img = img / 255
+
+    kernel = np.dstack([kernel]*d)
+    print(res.shape)
+    for i in tqdm(range(h - kh+1)):
+        for j in range(w - kw+1):
+            patch = img[i:i+kh, j:j+kw, :]
+            convolved_pixel = np.sum(patch * kernel, axis=(0, 1))
+            res[i, j] = convolved_pixel
+    return res
+
+turtle = open_image('./turtle thumbs up.png')
+
+plt.imshow(turtle)
+plt.show()
+
+turtle[250, 250]
+array([189, 207,  71], dtype=uint8)
+
+kernel = np.array([[1/2, 0, -1/2],
+                    [1/2, 0, -1/2],
+                    [1/2, 0, -1/2]])
+
+
+plt.imshow(convolve(turtle, kernel))
+plt.show()
