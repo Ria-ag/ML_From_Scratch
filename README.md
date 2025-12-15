@@ -16,7 +16,7 @@ The emphasis is on *learning and intuition*, not polished benchmarks. Each file 
 
 ---
 
-### `convolutional_edge.py` — Convolution from Scratch
+### `convolution_edge.py` — Convolution from Scratch
 
 * Manual 2D convolution on RGB images using NumPy
 * Edge-detection kernels applied pixel-by-pixel
@@ -40,7 +40,7 @@ The emphasis is on *learning and intuition*, not polished benchmarks. Each file 
 
 ---
 
-### `rl.py` — Reinforcement Learning (DQN)
+### `rl_net.py` — Reinforcement Learning (DQN)
 
 * Deep Q-Network trained on CartPole
 * Experience replay, target networks, and epsilon-greedy exploration
@@ -48,7 +48,7 @@ The emphasis is on *learning and intuition*, not polished benchmarks. Each file 
 
 ---
 
-### `lm.py` — Language Modeling
+### `lm_shakespeare.py` — Language Modeling
 
 * Fine-tunes a GPT-2 model on Tiny Shakespeare
 * Tokenization, batching, and causal language modeling
