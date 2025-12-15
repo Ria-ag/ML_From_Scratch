@@ -1,3 +1,12 @@
+Goal:
+- Build intuition for ordinary least squares and ridge regression
+- Understand closed-form solutions and regularization
+
+What this explores:
+- Fitting noisy synthetic data with OLS
+- Using ridge regression as a multiclass linear classifier on MNIST
+- Tradeoffs between simplicity, interpretability, and accuracy
+
 import numpy as np
 import matplotlib.pyplot as plt
 import sklearn
