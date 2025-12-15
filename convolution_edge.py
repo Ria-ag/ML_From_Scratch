@@ -1,3 +1,15 @@
+"""
+Convolution from Scratch (Edge Detection)
+
+Goal:
+- Understand how convolution operates at the pixel level
+
+What this explores:
+- Manual 2D convolution on RGB images using NumPy
+- Applying edge-detection kernels without deep learning libraries
+- How local receptive fields extract visual features
+"""
+
 import imageio.v2 as iio
 import matplotlib.pyplot as plt
 import numpy as np
